@@ -28,6 +28,6 @@ const analytics = getAnalytics(app);
 
 
 export const auth = getAuth(app);
-export const db =getDatabase(app);
+export const db =getDatabase();
 
 export default app;

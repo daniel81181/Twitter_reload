@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 
 import { db } from "../../firebase";
-import { onValue,ref  } from "firebase/database";
+import { onValue,ref, set,push} from "firebase/database";
 import './InputTweet.css'
 
 import Tweet from "../Tweet/Tweet";
@@ -31,13 +31,12 @@ export const MuroScreen= () => {
 
         const Push = (message) => {
 
-
-            db.ref('tweets').push({
-                user:'@daniel8181',
+            const query = push(ref(db, "tweets"),{
+                user: '@daniel8181',
                 date: new Date().toLocaleDateString(),
-                content:message
-
-            })
+                content: message
+            });
+          console.log(query)
         }
 
 
