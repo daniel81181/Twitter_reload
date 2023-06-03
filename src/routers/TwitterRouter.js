@@ -14,7 +14,7 @@ export const TwitterRouter = () => {
                     <Route exact path = "/Muro" element = {<MuroScreen/>}/>
                     <Route
                         path="*"
-                        element={<Navigate to="/MuroScreen" replace />}
+                        element={<Navigate to="/Muro" replace />}
                     />
                 </Routes>
             </div>
