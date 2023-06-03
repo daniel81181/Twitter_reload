@@ -25,7 +25,7 @@ export const Navbar = () =>{
 
             </div>
             </div>
-            <div style={{color: "#0000FF", marginLeft:"850px"}} >{username}</div>
+            <div style={{color: "#0000FF", marginLeft:"850px"}} >@daniel81181</div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className = "navbar-nav ml-auto">
