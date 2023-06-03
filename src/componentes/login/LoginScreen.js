@@ -30,7 +30,7 @@ export const LoginScreen = () => {
             <main >
                 <section>
                     <div>
-                        <p> FocusApp </p>
+                        <p> Twitter Better App </p>
 
                         <form>
                             <div>
