@@ -4,6 +4,8 @@ import { VideojuegosApp } from '../VideojuegosApp';
 import { Navbar } from '../componentes/comunes/Navbar';
 import { GameCollectionApp } from '../componentes/games/GameCollectionApp';
 import { BuscadorScreen } from '../componentes/buscador/BuscadorScreen';
+import { MuroScreen } from '../componentes/muro/MuroScreen';
+
 
 
 export const GamesRouter = () => {
@@ -12,12 +14,10 @@ export const GamesRouter = () => {
             <Navbar />
             <div>
                 <Routes>
-                    <Route exact path="/BusquedaGenero" element={<VideojuegosApp />} />
-                    <Route exact path="/GameCollectionApp" element={<GameCollectionApp />} />
-                    <Route exact path = "/BuscarColeccion" element = {<BuscadorScreen/>}/>
+                    <Route exact path = "/Muro" element = {<MuroScreen/>}/>
                     <Route
                         path="*"
-                        element={<Navigate to="/GameCollectionApp" replace />}
+                        element={<Navigate to="/MuroScreen" replace />}
                     />
                 </Routes>
             </div>

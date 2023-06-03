@@ -11,7 +11,7 @@ export const Navbar = () =>{
             <Link className = "navbar-brand"
                 to = "/"
             >
-                Gamebook
+                Muro Twitter Better
             </Link>
 
         <div className="navbar-collapse">
@@ -22,30 +22,10 @@ export const Navbar = () =>{
             va cargar para ser mostrado en la página. La propiedad 'exact' indica que debe ser la ruta exacta la que se
             tiene que indicar y enviar al Router.
             */}
-            <NavLink
-            className={({ isActive }) => isActive ? "active" : "nav-item nav-link"}
-            exact="true"
-            to="/GameCollectionApp"
-            >
-            Agregar juego
-            </NavLink>
-            <NavLink
-            className={({ isActive }) => isActive ? "active" : "nav-item nav-link"}
-            exact="true"
-            to="/BusquedaGenero"
-            >
-            Buscar género
-            </NavLink>
-            <NavLink
-            className={({ isActive }) => isActive ? "active" : "nav-item nav-link"}
-            exact="true"
-            to="/BuscarColeccion"
-            >
-            Mi buscador
-            </NavLink>
+
             </div>
             </div>
-            <div style={{color: "#0000FF", marginLeft:"850px"}} >{username}</div> 
+            <div style={{color: "#0000FF", marginLeft:"850px"}} >{username}</div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className = "navbar-nav ml-auto">

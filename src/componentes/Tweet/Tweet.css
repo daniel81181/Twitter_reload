@@ -1,0 +1,36 @@
+.tweet {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tweet-username {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tweet-message {
+    color: #333;
+}
+.tweet-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.tweet-button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tweet-button:hover {
+    background-color: #ccc;
+}
+
